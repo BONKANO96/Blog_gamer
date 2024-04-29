@@ -1,0 +1,228 @@
+header {
+    background-image: url('C:/Users/bonka/OneDrive/Bureau/Projet_1_assofac/background.png');
+    background-size: cover; /* Assurez-vous que l'image couvre entièrement l'arrière-plan */
+    background-position: center; /* Centrez l'image */
+    padding: 20px; /* Ajoutez un peu de marge intérieure pour que le contenu ne soit pas trop proche du bord de l'image */
+    color: white;
+    height: 490px;
+    justify-content: center;/*Adapte les élements*/
+    align-items: center;/*Alligne les élements*/
+    display: flex;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    text-align: right;
+    display: inline-block;
+}
+
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+main section h1 {
+    justify-content: center;/*Adapte les élements*/
+    display: flex;
+}
+
+hr {
+    margin: auto; /* Pour centrer horizontalement */
+    width: 15%; /* Largeur de la ligne horizontale */
+    position: relative;
+    top: -15px;
+}
+
+.explication {
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.historique {
+    background-color: whitesmoke;
+    display: block;
+    padding: 5%;
+
+}
+
+div p {
+    margin: 2%;
+}
+
+.couleur_gris {
+    background-color: #303030;
+    padding: 3%;
+}
+
+.couleur_noir {
+    background-color: black;
+}
+
+.events {
+    color: white;
+}
+
+.trait_blanc {
+    margin: auto; /* Pour centrer horizontalement */
+    width: 15%; /* Largeur de la ligne horizontale */
+    position: relative;
+    top: -15px;
+    color: whitesmoke;
+}
+
+.point_avancement {
+    text-align: center;
+    letter-spacing: 5px;
+    color: whitesmoke;
+}
+
+.grille_image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Nombre de colonnes ajustées automatiquement */
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.connexion {
+    display: none;
+}
+
+.connexion.active {
+    position: absolute;
+    display: grid; /* Afficher les icônes sur une seule ligne */
+    border: #303030;
+    right:25%;
+    top: 13%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    /* Styles spécifiques aux smartphones ici */
+    .menu-toggle {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        right: 5%;
+        top: 13%;
+        left: 21%;
+        transform: translateX(-50%);
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 50px;
+    }
+
+    .icone {
+        top: 21%;
+        position: relative;
+        height: 40px;
+        width: 70px;
+        display: block;
+        left: 29%;
+      }
+
+    .menu-toggle hr {
+        position: relative;
+        display: flex;
+        width: 25px;
+        margin: 5px;
+        border: 3px solid white;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-toggle div {
+        display: grid;
+    }
+
+    .social-navigation.active {
+        position: flex;
+        display: grid;
+        text-align: left;
+        padding-top: 50%;
+        left: 0;
+    }
+
+    .grille_image {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Nombre de colonnes ajustées automatiquement */
+    }
+
+    .logo {
+        position: flex;
+        top: 5%;
+        left: 53%;
+        transform: translateX(-50%);
+    }
+
+    .social-navigation {
+        display: none;
+    }
+
+    .social-navigation li {
+        padding-bottom: 25px;
+    }
+
+    header h1 {
+        justify-content: center;/*Adapte les élements*/
+        display: flex;
+        font-size: 103%;
+    }
+  }
+
+.image {
+    overflow: hidden; /* Empêche le débordement des images */
+}
+
+.image img {
+    width: 100%;
+    height: 100%; /* Permet aux images de conserver leurs proportions */
+}
+
+#text {
+    padding: 15%;
+}
+
+#retrogaming {
+    padding: 15%;
+    color: white;
+    background-color: #303030;
+}
+
+.text {
+    text-align: left;
+    margin: 5%;
+}
+
+footer {
+    padding: 0.75%;
+    background-color: #303030;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Aligner les icônes horizontalement */
+}
+
+.social-icons li {
+    display: inline-block; /* Afficher les icônes sur une seule ligne */
+    margin: 0 1.5%;
+}
+
+.social-navigation li{
+    display: inline-block;
+    margin: 0 15px;
+}
